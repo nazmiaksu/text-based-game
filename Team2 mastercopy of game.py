@@ -539,11 +539,6 @@ def input_cheek(a,b,c):
     else:
         return(vaccine_edit_pharma(a,b))
 
-
-
-        
-
-
 def end_game():
     print("""
 ___________.__                   __     _____.___.                _____                     .__                .__                 
@@ -1060,9 +1055,8 @@ def question_2(ans1):
         ans1 = input(">>")
     elif ans1.upper() == "B":
         print("Come on don't be stingy! Give him the last cookie that you've hidden in your pocket, you know you want to.")
-        first_riddle(ans1)
-
-       
+        print("test0")
+        first_riddle(ans1) 
     elif ans1.upper() == "C":
         print("You vaccinated the animals. They are virus-free, baby.")
         first_riddle(ans1)
@@ -1076,11 +1070,14 @@ def question_2(ans1):
 
         
         ans1 = input(">>")
+
 def first_riddle(ans1):
+    print("test1")
     if ans1 in answer_yes:
         print("\nOK, let me ask you a riddle!")
+        print("test2")
         question_2(ans1)
-    ans1 = input("""You proceed to give the rest of the animals the test vaccine.
+    print("""You proceed to give the rest of the animals the test vaccine.
 
          Suddenly you slip on a banana skin left by a gorilla. 
          
@@ -1095,7 +1092,6 @@ def first_riddle(ans1):
 
         """)
     ans1 = input("""After a train crash, every single person died. Who survived?
-    
     A: No one
     B: The couples
     C: Married people
@@ -1147,7 +1143,7 @@ def caged_animals():
 
     A: Dogzilla has some more ghost friends wanting to hump you
     B: All the animals are high and behaving weirdly
-    C: Just like Johnny, all of them are alive
+    C: Just like Johnny Five, all of them are alive
     """)
     if ans1.upper == "A":
         print("\nIncorrect, try again")
@@ -1175,74 +1171,6 @@ def caged_animals():
    
     #ans1 = input(">>")
 
-def question_2(ans1):
-    ans1
-    if ans1 in answer_yes:
-        print("""
-        All of a sudden the ghost of a dog called Dogzilla that dies during yesterday\'s tests appears and tries to mount you! 
-        
-        You have to decide whether to:  
-        A) Mount him back
-        B) Offer him a treat to try and hopes he forgets about humping you
-        C) Offer him the vaccine """)
-        
-       
-        ans1 = input(">>")
-        
-    if ans1.upper() == "A":
-        print("""The animals became rowdy and extremely horny. This pleases you.
-
-        They escape their cages, wanting a piece of the action.
-
-        You need to be brave and mount him back! How bad it can be huh?? 
-        
-        *\'Everybody hurts\' starts playing on the lab speakers*""")
-        
-        print("""You carefully approach a tiger and find a bald spot caused by the virus.
-
-        Just before you push your needle into the tiger, he says \'I love you.\' 
-        
-        You think this is weird but so is your entire life.
-        
-        The tiger slowly goes to sleep and his normal colour starts returning, 
-        
-        *Borat voice* 
-        Great success! """)
-        
-       
-        ans1 = input(">>")
-    elif ans1.upper() == "B":
-        print("\nCome on don't be stingy! Give him the last cookie that you've hidden in your pocket and save yourself! Who doesn't like a treat haha")
-        second_riddle(ans1)
-        print("""You proceed to give the rest of the animals the test vaccine.
-
-         Suddenly you slip on a banana skin left by a gorilla. 
-         
-         Gorilla Koko is angry and want to attack
-
-         Gorilla Koko makes you a one time deal.
-         
-         If you solve her riddle, she will let you live. 
-         Otherwise start praying!
-         
-         Press enter to see the riddle
-
-        """)
-    elif ans1.upper() == "C":
-        print("\nTry to vaccinate the animals")
-        print("\nhahaha")
-        second_riddle(ans1)
-    else:
-        print("\nInvalid input! Would you like to try again? [Y/N]")
-        ans1 = input(">>")
-        if ans1 == "no": 
-            animal_room()
-        else:
-            question_2(ans1)
-    #return(question_2())
-        
-def question_3():
-    print("")
 
 #Nazmi
 
@@ -1473,8 +1401,6 @@ def office_function():
         #You didn't choose A, B or C, try again
         #Repeat this function
         office_function()
-
-
 
 office_function()
 #Caleb
